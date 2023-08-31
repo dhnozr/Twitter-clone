@@ -3,10 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="assets/js/main.js" defer></script>
     <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Document</title>
   </head>
-  <body class="bg-slate-800">
-    <h1 class="text-white text-5xl text-center">Tailwind Css</h1>
+  <body>
+    <div class="h-screen bg-slate-900">
+      <div
+        class="max-w-7xl h-full justify-center flex flex-col md:flex-row items-center md:justify-between m-auto text-white"
+      >
+        <!-- right side -->
+        <div class="mb-5">
+          <img
+            src="assets/images/twitter-color-svgrepo-com.svg"
+            class="w-44 md:w-64 lg:w-72 xl:w-[500px]"
+            alt=""
+          />
+        </div>
+        <!-- left-side -->
+        <div class="grid gap-6">
+          <h2 class="text-5xl max-w-sm md:text-7xl md:max-w-lg">Şu anda olup bitenler</h2>
+          <p class="text-xl md:text-3xl">Hemen katıl.</p>
+          <button class="bg-blue-400 w-72 p-2 rounded-full md:text-2xl" id="createSub">Hesap Oluştur.</button>
+          <span class="max-w-xs">
+            By signing up, you agree to the Terms of Service and Privacy Policy, including Cookie
+            Use.
+          </span>
+          <div class="hidden" id="subFormWrapper">
+            <form class="flex flex-col gap-4 max-w-sm id="subForm">
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                class="p-2 rounded-full outline-none"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                name="email"
+                class="p-2 rounded-full outline-none"
+              />
+              <button class="bg-blue-400 p-2 rounded-full md:text-xl">Üye ol</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
